@@ -1,6 +1,6 @@
 # Internet-finance-project
 
-> A React-Redux game loop.
+> A project of bitcoin implementation
 
 ## Table of Contents
 
