@@ -1,0 +1,726 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		13F4BF09F23AC57B1FA09EFC /* Pods_BeeCoin_Wallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B85A59F334597AE16037B08 /* Pods_BeeCoin_Wallet.framework */; };
+		EF0146EA25570BCA006138DF /* paymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0146E925570BCA006138DF /* paymentView.swift */; };
+		EF0146EC255712F2006138DF /* MultiLineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0146EB255712F2006138DF /* MultiLineTextField.swift */; };
+		EF0146F025571EFA006138DF /* BeeCoin.png in Resources */ = {isa = PBXBuildFile; fileRef = EF0146EF25571EFA006138DF /* BeeCoin.png */; };
+		EF27EB932557B71D00F98E2E /* paymentSecurityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF27EB922557B71D00F98E2E /* paymentSecurityView.swift */; };
+		EFFB486525568664009E0CF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFB486425568664009E0CF8 /* AppDelegate.swift */; };
+		EFFB486725568664009E0CF8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFB486625568664009E0CF8 /* SceneDelegate.swift */; };
+		EFFB486A25568664009E0CF8 /* BeeCoin_Wallet.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EFFB486825568664009E0CF8 /* BeeCoin_Wallet.xcdatamodeld */; };
+		EFFB486C25568664009E0CF8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFB486B25568664009E0CF8 /* ContentView.swift */; };
+		EFFB486E25568665009E0CF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFFB486D25568665009E0CF8 /* Assets.xcassets */; };
+		EFFB487125568665009E0CF8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFFB487025568665009E0CF8 /* Preview Assets.xcassets */; };
+		EFFB487425568665009E0CF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFFB487225568665009E0CF8 /* LaunchScreen.storyboard */; };
+		EFFB487F25568665009E0CF8 /* BeeCoin_WalletTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFB487E25568665009E0CF8 /* BeeCoin_WalletTests.swift */; };
+		EFFB488A25568665009E0CF8 /* BeeCoin_WalletUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFB488925568665009E0CF8 /* BeeCoin_WalletUITests.swift */; };
+		EFFB489825568897009E0CF8 /* Wallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFB489725568897009E0CF8 /* Wallet.swift */; };
+		EFFB489F25568987009E0CF8 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFB489E25568987009E0CF8 /* Network.swift */; };
+		EFFB48A1255689BB009E0CF8 /* MainPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFB48A0255689BB009E0CF8 /* MainPageViewModel.swift */; };
+		EFFB48A325568B05009E0CF8 /* MainPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFB48A225568B05009E0CF8 /* MainPageView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EFFB487B25568665009E0CF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFFB485925568664009E0CF8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFFB486025568664009E0CF8;
+			remoteInfo = "BeeCoin Wallet";
+		};
+		EFFB488625568665009E0CF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFFB485925568664009E0CF8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFFB486025568664009E0CF8;
+			remoteInfo = "BeeCoin Wallet";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0FBE42E5660D974350F35DD3 /* Pods-BeeCoin Wallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeeCoin Wallet.release.xcconfig"; path = "Target Support Files/Pods-BeeCoin Wallet/Pods-BeeCoin Wallet.release.xcconfig"; sourceTree = "<group>"; };
+		7B85A59F334597AE16037B08 /* Pods_BeeCoin_Wallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeeCoin_Wallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD7C3695A0E53F61C4D80521 /* Pods-BeeCoin Wallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeeCoin Wallet.debug.xcconfig"; path = "Target Support Files/Pods-BeeCoin Wallet/Pods-BeeCoin Wallet.debug.xcconfig"; sourceTree = "<group>"; };
+		EF0146E925570BCA006138DF /* paymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = paymentView.swift; sourceTree = "<group>"; };
+		EF0146EB255712F2006138DF /* MultiLineTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiLineTextField.swift; sourceTree = "<group>"; };
+		EF0146EF25571EFA006138DF /* BeeCoin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BeeCoin.png; sourceTree = "<group>"; };
+		EF27EB922557B71D00F98E2E /* paymentSecurityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = paymentSecurityView.swift; sourceTree = "<group>"; };
+		EFFB486125568664009E0CF8 /* BeeCoin Wallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BeeCoin Wallet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFFB486425568664009E0CF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EFFB486625568664009E0CF8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EFFB486925568664009E0CF8 /* BeeCoin_Wallet.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BeeCoin_Wallet.xcdatamodel; sourceTree = "<group>"; };
+		EFFB486B25568664009E0CF8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EFFB486D25568665009E0CF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EFFB487025568665009E0CF8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EFFB487325568665009E0CF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EFFB487525568665009E0CF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFFB487A25568665009E0CF8 /* BeeCoin WalletTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BeeCoin WalletTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFFB487E25568665009E0CF8 /* BeeCoin_WalletTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeeCoin_WalletTests.swift; sourceTree = "<group>"; };
+		EFFB488025568665009E0CF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFFB488525568665009E0CF8 /* BeeCoin WalletUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BeeCoin WalletUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFFB488925568665009E0CF8 /* BeeCoin_WalletUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeeCoin_WalletUITests.swift; sourceTree = "<group>"; };
+		EFFB488B25568665009E0CF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFFB489725568897009E0CF8 /* Wallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wallet.swift; sourceTree = "<group>"; };
+		EFFB489E25568987009E0CF8 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		EFFB48A0255689BB009E0CF8 /* MainPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewModel.swift; sourceTree = "<group>"; };
+		EFFB48A225568B05009E0CF8 /* MainPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EFFB485E25568664009E0CF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13F4BF09F23AC57B1FA09EFC /* Pods_BeeCoin_Wallet.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFFB487725568665009E0CF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFFB488225568665009E0CF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0BBE205C1C044524EF178E90 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7B85A59F334597AE16037B08 /* Pods_BeeCoin_Wallet.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		764329A38F4944235D1F9471 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AD7C3695A0E53F61C4D80521 /* Pods-BeeCoin Wallet.debug.xcconfig */,
+				0FBE42E5660D974350F35DD3 /* Pods-BeeCoin Wallet.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EFFB485825568664009E0CF8 = {
+			isa = PBXGroup;
+			children = (
+				EFFB486325568664009E0CF8 /* BeeCoin Wallet */,
+				EFFB487D25568665009E0CF8 /* BeeCoin WalletTests */,
+				EFFB488825568665009E0CF8 /* BeeCoin WalletUITests */,
+				EFFB486225568664009E0CF8 /* Products */,
+				764329A38F4944235D1F9471 /* Pods */,
+				0BBE205C1C044524EF178E90 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EFFB486225568664009E0CF8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EFFB486125568664009E0CF8 /* BeeCoin Wallet.app */,
+				EFFB487A25568665009E0CF8 /* BeeCoin WalletTests.xctest */,
+				EFFB488525568665009E0CF8 /* BeeCoin WalletUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EFFB486325568664009E0CF8 /* BeeCoin Wallet */ = {
+			isa = PBXGroup;
+			children = (
+				EFFB4899255688B2009E0CF8 /* Extensions */,
+				EFFB486425568664009E0CF8 /* AppDelegate.swift */,
+				EFFB486625568664009E0CF8 /* SceneDelegate.swift */,
+				EFFB486B25568664009E0CF8 /* ContentView.swift */,
+				EFFB486D25568665009E0CF8 /* Assets.xcassets */,
+				EF0146EF25571EFA006138DF /* BeeCoin.png */,
+				EFFB487225568665009E0CF8 /* LaunchScreen.storyboard */,
+				EFFB487525568665009E0CF8 /* Info.plist */,
+				EFFB486825568664009E0CF8 /* BeeCoin_Wallet.xcdatamodeld */,
+				EFFB489725568897009E0CF8 /* Wallet.swift */,
+				EFFB489E25568987009E0CF8 /* Network.swift */,
+				EFFB486F25568665009E0CF8 /* Preview Content */,
+				EFFB48A0255689BB009E0CF8 /* MainPageViewModel.swift */,
+				EFFB48A225568B05009E0CF8 /* MainPageView.swift */,
+				EF0146E925570BCA006138DF /* paymentView.swift */,
+				EF27EB922557B71D00F98E2E /* paymentSecurityView.swift */,
+			);
+			path = "BeeCoin Wallet";
+			sourceTree = "<group>";
+		};
+		EFFB486F25568665009E0CF8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EFFB487025568665009E0CF8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EFFB487D25568665009E0CF8 /* BeeCoin WalletTests */ = {
+			isa = PBXGroup;
+			children = (
+				EFFB487E25568665009E0CF8 /* BeeCoin_WalletTests.swift */,
+				EFFB488025568665009E0CF8 /* Info.plist */,
+			);
+			path = "BeeCoin WalletTests";
+			sourceTree = "<group>";
+		};
+		EFFB488825568665009E0CF8 /* BeeCoin WalletUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EFFB488925568665009E0CF8 /* BeeCoin_WalletUITests.swift */,
+				EFFB488B25568665009E0CF8 /* Info.plist */,
+			);
+			path = "BeeCoin WalletUITests";
+			sourceTree = "<group>";
+		};
+		EFFB4899255688B2009E0CF8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EF0146EB255712F2006138DF /* MultiLineTextField.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EFFB486025568664009E0CF8 /* BeeCoin Wallet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFFB488E25568665009E0CF8 /* Build configuration list for PBXNativeTarget "BeeCoin Wallet" */;
+			buildPhases = (
+				1F87823A8AF9D85C24F2DBCC /* [CP] Check Pods Manifest.lock */,
+				EFFB485D25568664009E0CF8 /* Sources */,
+				EFFB485E25568664009E0CF8 /* Frameworks */,
+				EFFB485F25568664009E0CF8 /* Resources */,
+				78AFF698A3E041418F5E1034 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BeeCoin Wallet";
+			productName = "BeeCoin Wallet";
+			productReference = EFFB486125568664009E0CF8 /* BeeCoin Wallet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EFFB487925568665009E0CF8 /* BeeCoin WalletTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFFB489125568665009E0CF8 /* Build configuration list for PBXNativeTarget "BeeCoin WalletTests" */;
+			buildPhases = (
+				EFFB487625568665009E0CF8 /* Sources */,
+				EFFB487725568665009E0CF8 /* Frameworks */,
+				EFFB487825568665009E0CF8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EFFB487C25568665009E0CF8 /* PBXTargetDependency */,
+			);
+			name = "BeeCoin WalletTests";
+			productName = "BeeCoin WalletTests";
+			productReference = EFFB487A25568665009E0CF8 /* BeeCoin WalletTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EFFB488425568665009E0CF8 /* BeeCoin WalletUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFFB489425568665009E0CF8 /* Build configuration list for PBXNativeTarget "BeeCoin WalletUITests" */;
+			buildPhases = (
+				EFFB488125568665009E0CF8 /* Sources */,
+				EFFB488225568665009E0CF8 /* Frameworks */,
+				EFFB488325568665009E0CF8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EFFB488725568665009E0CF8 /* PBXTargetDependency */,
+			);
+			name = "BeeCoin WalletUITests";
+			productName = "BeeCoin WalletUITests";
+			productReference = EFFB488525568665009E0CF8 /* BeeCoin WalletUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EFFB485925568664009E0CF8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = timlee;
+				TargetAttributes = {
+					EFFB486025568664009E0CF8 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					EFFB487925568665009E0CF8 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = EFFB486025568664009E0CF8;
+					};
+					EFFB488425568665009E0CF8 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = EFFB486025568664009E0CF8;
+					};
+				};
+			};
+			buildConfigurationList = EFFB485C25568664009E0CF8 /* Build configuration list for PBXProject "BeeCoin Wallet" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EFFB485825568664009E0CF8;
+			productRefGroup = EFFB486225568664009E0CF8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EFFB486025568664009E0CF8 /* BeeCoin Wallet */,
+				EFFB487925568665009E0CF8 /* BeeCoin WalletTests */,
+				EFFB488425568665009E0CF8 /* BeeCoin WalletUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EFFB485F25568664009E0CF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFFB487425568665009E0CF8 /* LaunchScreen.storyboard in Resources */,
+				EFFB487125568665009E0CF8 /* Preview Assets.xcassets in Resources */,
+				EFFB486E25568665009E0CF8 /* Assets.xcassets in Resources */,
+				EF0146F025571EFA006138DF /* BeeCoin.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFFB487825568665009E0CF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFFB488325568665009E0CF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F87823A8AF9D85C24F2DBCC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BeeCoin Wallet-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		78AFF698A3E041418F5E1034 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BeeCoin Wallet/Pods-BeeCoin Wallet-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BeeCoin Wallet/Pods-BeeCoin Wallet-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BeeCoin Wallet/Pods-BeeCoin Wallet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EFFB485D25568664009E0CF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFFB489825568897009E0CF8 /* Wallet.swift in Sources */,
+				EFFB48A325568B05009E0CF8 /* MainPageView.swift in Sources */,
+				EFFB489F25568987009E0CF8 /* Network.swift in Sources */,
+				EFFB486525568664009E0CF8 /* AppDelegate.swift in Sources */,
+				EF0146EA25570BCA006138DF /* paymentView.swift in Sources */,
+				EF27EB932557B71D00F98E2E /* paymentSecurityView.swift in Sources */,
+				EFFB486725568664009E0CF8 /* SceneDelegate.swift in Sources */,
+				EFFB486C25568664009E0CF8 /* ContentView.swift in Sources */,
+				EFFB48A1255689BB009E0CF8 /* MainPageViewModel.swift in Sources */,
+				EFFB486A25568664009E0CF8 /* BeeCoin_Wallet.xcdatamodeld in Sources */,
+				EF0146EC255712F2006138DF /* MultiLineTextField.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFFB487625568665009E0CF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFFB487F25568665009E0CF8 /* BeeCoin_WalletTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFFB488125568665009E0CF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFFB488A25568665009E0CF8 /* BeeCoin_WalletUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EFFB487C25568665009E0CF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EFFB486025568664009E0CF8 /* BeeCoin Wallet */;
+			targetProxy = EFFB487B25568665009E0CF8 /* PBXContainerItemProxy */;
+		};
+		EFFB488725568665009E0CF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EFFB486025568664009E0CF8 /* BeeCoin Wallet */;
+			targetProxy = EFFB488625568665009E0CF8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EFFB487225568665009E0CF8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFFB487325568665009E0CF8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EFFB488C25568665009E0CF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EFFB488D25568665009E0CF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EFFB488F25568665009E0CF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD7C3695A0E53F61C4D80521 /* Pods-BeeCoin Wallet.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"BeeCoin Wallet/Preview Content\"";
+				DEVELOPMENT_TEAM = 474KLSDTAZ;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "BeeCoin Wallet/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "TimLee.BeeCoin-Wallet";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EFFB489025568665009E0CF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FBE42E5660D974350F35DD3 /* Pods-BeeCoin Wallet.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"BeeCoin Wallet/Preview Content\"";
+				DEVELOPMENT_TEAM = 474KLSDTAZ;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "BeeCoin Wallet/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "TimLee.BeeCoin-Wallet";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EFFB489225568665009E0CF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 474KLSDTAZ;
+				INFOPLIST_FILE = "BeeCoin WalletTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "TimLee.BeeCoin-WalletTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BeeCoin Wallet.app/BeeCoin Wallet";
+			};
+			name = Debug;
+		};
+		EFFB489325568665009E0CF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 474KLSDTAZ;
+				INFOPLIST_FILE = "BeeCoin WalletTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "TimLee.BeeCoin-WalletTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BeeCoin Wallet.app/BeeCoin Wallet";
+			};
+			name = Release;
+		};
+		EFFB489525568665009E0CF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 474KLSDTAZ;
+				INFOPLIST_FILE = "BeeCoin WalletUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "TimLee.BeeCoin-WalletUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "BeeCoin Wallet";
+			};
+			name = Debug;
+		};
+		EFFB489625568665009E0CF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 474KLSDTAZ;
+				INFOPLIST_FILE = "BeeCoin WalletUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "TimLee.BeeCoin-WalletUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "BeeCoin Wallet";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EFFB485C25568664009E0CF8 /* Build configuration list for PBXProject "BeeCoin Wallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFFB488C25568665009E0CF8 /* Debug */,
+				EFFB488D25568665009E0CF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFFB488E25568665009E0CF8 /* Build configuration list for PBXNativeTarget "BeeCoin Wallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFFB488F25568665009E0CF8 /* Debug */,
+				EFFB489025568665009E0CF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFFB489125568665009E0CF8 /* Build configuration list for PBXNativeTarget "BeeCoin WalletTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFFB489225568665009E0CF8 /* Debug */,
+				EFFB489325568665009E0CF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFFB489425568665009E0CF8 /* Build configuration list for PBXNativeTarget "BeeCoin WalletUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFFB489525568665009E0CF8 /* Debug */,
+				EFFB489625568665009E0CF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EFFB486825568664009E0CF8 /* BeeCoin_Wallet.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EFFB486925568664009E0CF8 /* BeeCoin_Wallet.xcdatamodel */,
+			);
+			currentVersion = EFFB486925568664009E0CF8 /* BeeCoin_Wallet.xcdatamodel */;
+			path = BeeCoin_Wallet.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EFFB485925568664009E0CF8 /* Project object */;
+}

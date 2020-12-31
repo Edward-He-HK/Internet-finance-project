@@ -1,0 +1,6 @@
+framework module Pods_BeeCoin_Wallet {
+  umbrella header "Pods-BeeCoin Wallet-umbrella.h"
+
+  export *
+  module * { export * }
+}
